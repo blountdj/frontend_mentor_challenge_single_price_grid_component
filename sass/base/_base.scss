@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-light-gray;
+}
+
+.main {
+  margin: 8rem auto;
+  width: 50%;
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 60%;
+  border-radius: 1rem;
+
+  &__header {
+    background-color: $color-white;
+    padding: 4rem 6rem;
+    grid-column: 1 / -1;
+    border-radius: 1rem 1rem 0 0;
+
+    &__h1 {
+      color: $color-cyan;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+
+    &__h2 {
+      color: $color-bright-yellow;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    &__p {
+      color: $color-grayish-blue;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+
+  &__subscribe {
+    background-color: $color-cyan;
+    color: $color-white;
+    padding: 3rem;
+    border-radius: 0 0 0 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 5rem;
+
+    &__h3 {
+      margin-bottom: 3rem;
+    }
+
+    &__price_block {
+      color: $color-light-gray;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+
+      &--bold {
+        font-weight: 700;
+        font-size: 3rem;
+        padding-right: 1rem;
+        color: $color-white;
+      }
+    }
+
+    &__p {
+      color: $color-light-gray;
+      margin-bottom: 3rem;
+    }
+
+    &__button {
+      color: $color-white;
+      background-color: $color-bright-yellow;
+      border: none;
+      border-radius: 1rem;
+      width: 100%;
+      padding: 1.5rem;
+      font-weight: 700;
+      box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__why {
+    background-color: $color-cyan-light;
+    color: $color-light-gray;
+    padding: 3rem;
+    border-radius: 0 0 1rem 0;
+    padding-right: 12rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+
+    &__h3 {
+      color: $color-white;
+      margin-bottom: 2rem;
+    }
+
+    &__ul {
+      color: $color-light-gray;
+      line-height: 1.3;
+      list-style: none;
+    }
+  }
+}
